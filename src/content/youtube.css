@@ -1,0 +1,33 @@
+/* Everything is scoped to html.sk-hide-shorts, toggled by youtube.js. */
+
+/* Shorts shelves (home, subscriptions, search, channel pages) */
+html.sk-hide-shorts ytd-reel-shelf-renderer,
+html.sk-hide-shorts ytd-rich-shelf-renderer[is-shorts],
+html.sk-hide-shorts ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+html.sk-hide-shorts ytd-rich-section-renderer:has(ytm-shorts-lockup-view-model),
+html.sk-hide-shorts grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+html.sk-hide-shorts ytd-item-section-renderer:has(> #contents > ytd-reel-shelf-renderer),
+
+/* Individual Shorts in feeds, search results and sidebars */
+html.sk-hide-shorts ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+html.sk-hide-shorts ytd-video-renderer:has(a[href^="/shorts/"]),
+html.sk-hide-shorts ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+html.sk-hide-shorts ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+html.sk-hide-shorts yt-lockup-view-model:has(a[href^="/shorts/"]),
+html.sk-hide-shorts ytm-shorts-lockup-view-model,
+html.sk-hide-shorts ytm-shorts-lockup-view-model-v2,
+
+/* Navigation entries */
+html.sk-hide-shorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.sk-hide-shorts ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+html.sk-hide-shorts ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+html.sk-hide-shorts ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+html.sk-hide-shorts yt-tab-shape[tab-title="Shorts"],
+
+/* Mobile site (m.youtube.com) */
+html.sk-hide-shorts ytm-reel-shelf-renderer,
+html.sk-hide-shorts ytm-rich-section-renderer:has(ytm-reel-shelf-renderer),
+html.sk-hide-shorts ytm-video-with-context-renderer:has(a[href^="/shorts/"]),
+html.sk-hide-shorts ytm-pivot-bar-item-renderer:has(.pivot-shorts) {
+  display: none !important;
+}

@@ -1,0 +1,11 @@
+{
+  "version": {
+    "license": "MIT"
+  },
+  "categories": {
+    "firefox": ["other"]
+  },
+  "summary": {
+    "en-US": "A pocket multitool for your browser: a growing set of small, unrelated tweaks that make everyday sites a bit nicer."
+  }
+}

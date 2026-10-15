@@ -1,0 +1,20 @@
+{
+  "name": "swiss-knife",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "A pocket multitool for your browser: a growing set of small, unrelated tweaks that make everyday sites a bit nicer.",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . && web-ext lint --source-dir src --warnings-as-errors",
+    "test": "node --test",
+    "build": "web-ext build --source-dir src --overwrite-dest",
+    "start": "web-ext run --source-dir src --start-url https://www.youtube.com"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "web-ext": "^10.8.0"
+  }
+}

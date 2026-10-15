@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SwissKnife</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="grid">
+      <header class="tile tile--paper brand">
+        <img class="brand__logo" src="../icons/icon.svg" alt="" width="40" height="40" />
+        <h1 class="brand__name">SwissKnife</h1>
+        <span class="chip chip--ink" id="version"></span>
+      </header>
+
+      <section id="features" class="grid" aria-label="Tools"></section>
+
+      <footer class="tile tile--paper status">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span id="summary"></span>
+      </footer>
+    </main>
+
+    <template id="feature-template">
+      <label class="tile feature">
+        <span class="chip feature__site"></span>
+        <span class="feature__title"></span>
+        <span class="feature__desc"></span>
+        <input class="switch" type="checkbox" role="switch" />
+      </label>
+    </template>
+
+    <script src="../shared/settings.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
