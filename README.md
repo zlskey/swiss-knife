@@ -23,15 +23,20 @@ Adding a tool: register it in `src/shared/settings.js` (it shows up in the popup
 
 ## Releasing
 
-CI (`.github/workflows/ci.yml`) lints, tests and builds on every push and PR. Pushing a `v*` tag also signs and submits the extension to addons.mozilla.org and attaches the zip to a GitHub release.
+CI (`.github/workflows/ci.yml`) lints, tests and builds on every push and PR.
+
+Releases are cut by the manually triggered **Release** workflow (`.github/workflows/release.yml`). Run it from the Actions tab on `main` and pick a `patch`, `minor` or `major` bump (or type an exact version). It:
+
+1. lints and tests,
+2. bumps the version in `package.json`, `package-lock.json` and `src/manifest.json`,
+3. moves the **Unreleased** section of `CHANGELOG.md` under the new version,
+4. signs and submits the extension to addons.mozilla.org, using that section as the release notes,
+5. commits, tags `vX.Y.Z`, pushes to `main`, and creates a GitHub release with the zip attached.
+
+Log changes under **Unreleased** in `CHANGELOG.md` as you make them; the workflow refuses to release with an empty section.
 
 One-time setup:
 
 1. Create AMO API credentials at https://addons.mozilla.org/developers/addon/api/key/.
 2. In the GitHub repo, create an environment named `amo` with secrets `AMO_JWT_ISSUER` and `AMO_JWT_SECRET`.
-
-To release: bump `version` in both `package.json` and `src/manifest.json`, commit, then tag and push:
-
-```bash
-git tag v0.1.0 && git push origin main --tags
-```
+3. If `main` is branch-protected, allow GitHub Actions to push to it (or the release commit will be rejected).
