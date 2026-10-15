@@ -6,6 +6,8 @@ Add entries under **Unreleased** as you go; the `Release` workflow turns that se
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-15
+
 ### Added
 
 - Hide YouTube Shorts: hides Shorts shelves, feed items, tabs and nav entries, and opens `/shorts/<id>` as `/watch?v=<id>`.

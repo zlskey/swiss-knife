@@ -1,6 +1,6 @@
 {
   "name": "swiss-knife",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "license": "MIT",
   "description": "A pocket multitool for your browser: a growing set of small, unrelated tweaks that make everyday sites a bit nicer.",

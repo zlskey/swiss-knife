@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SwissKnife",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A pocket multitool for your browser: a growing set of small, unrelated tweaks that make everyday sites a bit nicer.",
   "icons": {
     "48": "icons/icon.svg",
