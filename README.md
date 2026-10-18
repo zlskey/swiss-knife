@@ -6,6 +6,7 @@ A pocket multitool for your browser: a growing set of small, unrelated tweaks th
 | --- | --- | --- |
 | Hide YouTube Shorts | youtube.com | Hides Shorts shelves, feed items, tabs and nav entries; opens `/shorts/<id>` as `/watch?v=<id>` |
 | Claude colors on ChatGPT | chatgpt.com | Repaints ChatGPT in Claude's palette: `#111111` background, warm grays, ivory text, clay accents |
+| Claude background on Otodom | otodom.pl | Swaps white and gray page backgrounds for Claude's ivory `#faf9f5` |
 
 Toggle each one from the toolbar popup.
 

@@ -6,6 +6,10 @@ Add entries under **Unreleased** as you go; the `Release` workflow turns that se
 
 ## [Unreleased]
 
+### Added
+
+- Claude background on Otodom: swaps the white and gray page backgrounds for Claude's ivory.
+
 ## [0.1.1] - 2026-10-15
 
 ### Added

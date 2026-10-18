@@ -27,6 +27,11 @@
       "matches": ["*://chatgpt.com/*", "*://chat.openai.com/*"],
       "js": ["shared/settings.js", "content/watch-setting.js", "content/chatgpt.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.otodom.pl/*"],
+      "js": ["shared/settings.js", "content/watch-setting.js", "content/otodom.js"],
+      "run_at": "document_start"
     }
   ],
   "browser_specific_settings": {

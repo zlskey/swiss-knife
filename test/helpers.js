@@ -57,8 +57,10 @@ export function loadScripts(files, { href = "https://www.youtube.com/", storage 
     document: {
       ...target,
       readyState: "loading",
+      styleSheets: [],
       createElement: () => ({ style: {}, remove() {}, getContext: () => null }),
       documentElement: {
+        append() {},
         classList: {
           contains: (c) => classes.has(c),
           toggle: (c, force) => (force ? classes.add(c) : classes.delete(c), force),

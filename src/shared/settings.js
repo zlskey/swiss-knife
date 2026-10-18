@@ -20,6 +20,14 @@ const SK_FEATURES = Object.freeze([
     accent: "sky",
     defaultValue: false,
   },
+  {
+    key: "otodomClaudeBackground",
+    title: "Claude background on Otodom",
+    description: "Swaps Otodom's white and gray page backgrounds for Claude's warm ivory.",
+    site: "otodom.pl",
+    accent: "tangerine",
+    defaultValue: false,
+  },
 ]);
 
 const SK_DEFAULTS = Object.freeze(
