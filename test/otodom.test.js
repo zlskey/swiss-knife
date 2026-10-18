@@ -20,3 +20,11 @@ test("maps white and light gray backgrounds to Claude's", () => {
   assert.equal(run('skOtodomOverrides("#F2F3F6")'), "#f0eee6");
   assert.equal(run('skOtodomOverrides("rgb(7, 17, 33)")'), null);
 });
+
+test("maps Otodom's navy text to Claude's ink", () => {
+  const { run } = loadScripts(FILES);
+  const text = (c) => run(`skOtodomOverrides(${JSON.stringify(c)}, SK_OTODOM_TEXT)`);
+  assert.equal(text("rgb(7, 17, 33)"), "#141413");
+  assert.equal(text("#495260"), "#5e5d59");
+  assert.equal(text("rgb(255, 255, 255)"), null);
+});

@@ -22,8 +22,8 @@ const SK_FEATURES = Object.freeze([
   },
   {
     key: "otodomClaudeBackground",
-    title: "Claude background on Otodom",
-    description: "Swaps Otodom's white and gray page backgrounds for Claude's warm ivory.",
+    title: "Claude colors on Otodom",
+    description: "Swaps Otodom's white backgrounds and navy text for Claude's warm ivory and ink.",
     site: "otodom.pl",
     accent: "tangerine",
     defaultValue: false,

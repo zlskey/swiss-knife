@@ -8,7 +8,7 @@ Add entries under **Unreleased** as you go; the `Release` workflow turns that se
 
 ### Added
 
-- Claude background on Otodom: swaps the white and gray page backgrounds for Claude's ivory.
+- Claude colors on Otodom: swaps the white and gray backgrounds for Claude's ivory and the navy text for Claude's ink.
 
 ## [0.1.1] - 2026-10-15
 
